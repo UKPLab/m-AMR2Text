@@ -30,13 +30,13 @@ pip install -r requirements.txt
 
 ## Finetuning
 
-For training mt5 using silverAMR and silverSent, execute:
+For training `mt5` using `silverAMR` and `silverSent`, execute:
 ```
-./finetune.sh <SILVER_SENT_FILE>  <SILVER_AMR_FILE> <DEV_FILE> <MODEL_DIR> 
+./finetune.sh <SILVER_SENT_FILE> <SILVER_AMR_FILE> <DEV_FILE> <MODEL_DIR> 
 ```
-where `<SILVER_SENT_FILE>` and `<SILVER_AMR_FILE>` pointer to json files for training,  `<SILVER_AMR_FILE>` pointer to the dev json file and  `<MODEL_DIR>` is the folder where the checkpoint will be saved.
+where `<SILVER_SENT_FILE>` and `<SILVER_AMR_FILE>` pointer to json files for training,  `<DEV_FILE>` pointer to the dev file, and  `<MODEL_DIR>` is the folder where the checkpoint will be saved.
 
-This is a example for a line in the json files:
+This is an example for a line in the json file:
 ```
 {"source": "translate AMR to Spanish: ( relevant :polarity - :ARG1 ( or :op1 ( involve :ARG1 ( and :op1 ( face :ARG1-of ( black ) ) :op2 ( noose ) ) :ARG2 ( thing :ARG2-of ( costume :ARG1 ( you ) ) ) ) :op2 ( costume :ARG1 you :ARG2 ( sandwich :ARG1-of ( grill ) :mod ( cheese :ARG1-of ( drip :degree ( too :degree ( little ) ) ) :ARG1-of ( think :ARG0 ( involve-01 ) ) ) ) ) ) )", "target": "Si tu traje tiene un rostro negro y un nausea, o si se trata de un sándwich fritado en el que creo que el queso es un poco demasiado ardiente es irrelevante."}
 ```
@@ -55,7 +55,7 @@ For decoding, run:
 
 ## Traiened Model
 
-A checkpoint trained on SilverAMR and SilverSent can be found [here](https://public.ukp.informatik.tu-darmstadt.de/ribeiro/graph2text/mt5_base_silveramr_silversent.tar.gz). This model achieves a _BLEU score_ of _30.7_ (ES), _26.4_ (IT), _20.6_ (DE) and _24.2_ (ZH). The outputs can be downloaded [here](https://raw.githubusercontent.com/UKPLab/m-AMR2Text/outputs).
+A checkpoint trained on `SilverAMR` and `SilverSent` can be found [here](https://public.ukp.informatik.tu-darmstadt.de/ribeiro/graph2text/mt5_base_silveramr_silversent.tar.gz). This model achieves a _BLEU score_ of _30.7_ (ES), _26.4_ (IT), _20.6_ (DE) and _24.2_ (ZH). The outputs can be downloaded [here](https://raw.githubusercontent.com/UKPLab/m-AMR2Text/outputs).
 
 ## More
 For more details regarding hyperparameters, please refer to [HuggingFace](https://huggingface.co/).
