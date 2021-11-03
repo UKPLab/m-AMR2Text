@@ -55,7 +55,7 @@ For decoding, run:
 
 ## Traiened Model
 
-A checkpoint trained on `SilverAMR` and `SilverSent` can be found [here](https://public.ukp.informatik.tu-darmstadt.de/ribeiro/graph2text/mt5_base_silveramr_silversent.tar.gz). This model achieves a _BLEU score_ of _30.7_ (ES), _26.4_ (IT), _20.6_ (DE) and _24.2_ (ZH). The outputs can be downloaded [here](https://raw.githubusercontent.com/UKPLab/m-AMR2Text/outputs).
+A checkpoint trained on `SilverAMR` and `SilverSent` can be found [here](https://public.ukp.informatik.tu-darmstadt.de/ribeiro/graph2text/mt5_base_silveramr_silversent.tar.gz). This model achieves _BLEU scores_ of _30.7_ (ES), _26.4_ (IT), _20.6_ (DE) and _24.2_ (ZH). The outputs can be downloaded [here](https://raw.githubusercontent.com/UKPLab/m-AMR2Text/outputs).
 
 ## More
 For more details regarding hyperparameters, please refer to [HuggingFace](https://huggingface.co/).
