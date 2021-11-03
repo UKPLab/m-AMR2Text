@@ -2,7 +2,7 @@
 This repository contains the code for the [EMNLP 2021 paper](https://arxiv.org/pdf/2109.03808.pdf) "Smelting Gold and Silver for Improved Multilingual AMR-to-Text Generation". 
 
 <p align="center">
-<img src="img/example-m-amr.png" width="400">
+<img src="img/example-m-amr.png" width="200">
 </p>
 
 ## Datasets
