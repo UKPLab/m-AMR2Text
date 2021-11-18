@@ -67,15 +67,18 @@ For more details regarding hyperparameters, please refer to [HuggingFace](https:
 
 ```
 @inproceedings{ribeiro-etal-2021-smelting,
-    title = "Smelting Gold and Silver for Improved Multilingual AMR-to-Text Generation",
+    title = "Smelting Gold and Silver for Improved Multilingual {AMR}-to-{T}ext Generation",
     author = "Ribeiro, Leonardo F. R.  and
       Pfeiffer, Jonas  and
       Zhang, Yue  and
       Gurevych, Iryna",
-    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    booktitle = "Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing",
     month = nov,
     year = "2021",
-    address = "Punta Cana, Dominican Republic",
+    address = "Online and Punta Cana, Dominican Republic",
     publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2021.emnlp-main.57",
+    pages = "742--750",
+    abstract = "Recent work on multilingual AMR-to-text generation has exclusively focused on data augmentation strategies that utilize silver AMR. However, this assumes a high quality of generated AMRs, potentially limiting the transferability to the target task. In this paper, we investigate different techniques for automatically generating AMR annotations, where we aim to study which source of information yields better multilingual results. Our models trained on gold AMR with silver (machine translated) sentences outperform approaches which leverage generated silver AMR. We find that combining both complementary sources of information further improves multilingual AMR-to-text generation. Our models surpass the previous state of the art for German, Italian, Spanish, and Chinese by a large margin.",
 }
 ```
